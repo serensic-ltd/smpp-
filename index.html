@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <meta charset="UTF-8">
     <title>Smpp- by serensic-ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Smpp-</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/serensic-ltd/smpp-" class="btn">View on GitHub</a>
+      <a href="https://github.com/serensic-ltd/smpp-/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/serensic-ltd/smpp-/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <header>
-      <div class="container">
-        <h1>Smpp-</h1>
-        <h2></h2>
-
-        <section id="downloads">
-          <a href="https://github.com/serensic-ltd/smpp-/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/serensic-ltd/smpp-/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/serensic-ltd/smpp-" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h1>
+    <section class="main-content">
+      <h1>
 <a id="listed-in-the-below-table-are-webservices-parameters-for-individual-tasks" class="anchor" href="#listed-in-the-below-table-are-webservices-parameters-for-individual-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Listed in the below table are webservices parameters for individual tasks.</h1>
 
 <p>Name    Description
@@ -177,51 +168,65 @@ Optional    format
 Returns     user's credit or return codes
 Get token</p>
 
-<p>Get user's webservices token. This can be used as a login mechanism.
-Parameters  Name or description
+<h2>
+<a id="get-users-webservices-token-this-can-be-used-as-a-login-mechanism" class="anchor" href="#get-users-webservices-token-this-can-be-used-as-a-login-mechanism" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get user's webservices token. This can be used as a login mechanism.</h2>
+
+<p>Parameters  Name or description
 Operation   get_token
 Mandatory   u p
 Optional    format
 Returns     webservices token or return codes
 Set token</p>
 
-<p>Set user's webservices token. This can be used as a change password mechanism.
-Parameters  Name or description
+<h2>
+<a id="set-users-webservices-token-this-can-be-used-as-a-change-password-mechanism" class="anchor" href="#set-users-webservices-token-this-can-be-used-as-a-change-password-mechanism" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set user's webservices token. This can be used as a change password mechanism.</h2>
+
+<p>Parameters  Name or description
 Operation   set_token
 Mandatory   u h
 Optional    format
 Returns     new webservices token or return codes
 Get contact list</p>
 
-<p>Get contact list by name, mobile or email
-Parameters  Name or description
+<h2>
+<a id="get-contact-list-by-name-mobile-or-email" class="anchor" href="#get-contact-list-by-name-mobile-or-email" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get contact list by name, mobile or email</h2>
+
+<p>Parameters  Name or description
 Operation   get_contact
 Mandatory   u h kwd
 Optional    c format
 Returns     list of contacts similar or the same as kwd or return codes
 Get group contact list</p>
 
-<p>Get group contact list by name or code
-Parameters  Name or description
+<h2>
+<a id="get-group-contact-list-by-name-or-code" class="anchor" href="#get-group-contact-list-by-name-or-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get group contact list by name or code</h2>
+
+<p>Parameters  Name or description
 Operation   get_contact_group
 Mandatory   u h kwd
 Optional    c format
 Returns     list of contact groups similar or the same as kwd or return codes
 Webservices login</p>
 
-<p>Authenticate user via webservices and redirect to index.php upon authentication, successful or failed or invalid.
-Parameters  Name or description
+<h2>
+<a id="authenticate-user-via-webservices-and-redirect-to-indexphp-upon-authentication-successful-or-failed-or-invalid" class="anchor" href="#authenticate-user-via-webservices-and-redirect-to-indexphp-upon-authentication-successful-or-failed-or-invalid" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authenticate user via webservices and redirect to index.php upon authentication, successful or failed or invalid.</h2>
+
+<p>Parameters  Name or description
 Operation   ws_login
 Mandatory   u login_key
 Optional    none
 Returns     none, web redirect to index.php</p>
 
-<p>Parameter login_key is set by admin accounts through webservices call using operation loginkeyset
-Protocol for admin tasks
+<h2>
+<a id="parameter-login_key-is-set-by-admin-accounts-through-webservices-call-using-operation-loginkeyset" class="anchor" href="#parameter-login_key-is-set-by-admin-accounts-through-webservices-call-using-operation-loginkeyset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parameter login_key is set by admin accounts through webservices call using operation loginkeyset</h2>
+
+<p>Protocol for admin tasks
 Inject message</p>
 
-<p>Inject message to the system
-Parameters  Name or description
+<h2>
+<a id="inject-message-to-the-system" class="anchor" href="#inject-message-to-the-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inject message to the system</h2>
+
+<p>Parameters  Name or description
 Operation   inject
 Mandatory   u h from msg recvnum smsc
 Optional    format
@@ -230,14 +235,17 @@ Returns     return codes</p>
 <p>Injected message will be treated as a valid incoming SMS.
 Add account</p>
 
-<p>Add an account
-Parameters  Name or description
+<h2>
+<a id="add-an-account" class="anchor" href="#add-an-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add an account</h2>
+
+<p>Parameters  Name or description
 Operation   accountadd
 Mandatory   u h data_status data_username data_password data_name data_email
 Optional    format data_parent data_mobile data_datetime_timezone data_language_module
 Returns     return codes and info</p>
 
-<p>Notes:</p>
+<h2>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes:</h2>
 
 <pre><code>most mandatory and optional query parameters are prefixed with data_
 data_status 2 is for admin level account
@@ -246,25 +254,25 @@ data_status 4 is for subuser level account
 data_parent may need to be set when adding subuser level account
 </code></pre>
 
-<p>Remove account</p>
-
-<p>Remove an account
+<p>Remove account
+Notes:
+Remove an account
 Parameters  Name or description
 Operation   accountremove
 Mandatory   u h data_username
 Optional    format
 Returns     return codes and info
-Set parent for subuser</p>
-
-<p>Set parent for subuser level account
+Set parent for subuser
+Notes:
+Set parent for subuser level account
 Parameters  Name or description
 Operation   parentset
 Mandatory   u h data_username data_parent
 Optional    format
 Returns     return codes
-Get parent from subuser</p>
-
-<p>Get parent from subuser level account
+Get parent from subuser
+Notes:
+Get parent from subuser level account
 Parameters  Name or description
 Operation   parentget
 Mandatory   u h data_username
@@ -410,9 +418,15 @@ List of contacts on phonebook</p>
 <p>{"status":"OK","error":"0","data":[{"pid":"13674","gpid":"2","p_desc":"Mark Francis","p_num":"255000000","email":"","group_name":"Test Group","code":"TESTGROUP"}],"multi":true}</p>
 
 <p>When error occurred serensic will returns one of the return code, also in JSON format.</p>
-      </section>
-    </div>
 
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/serensic-ltd/smpp-">Smpp-</a> is maintained by <a href="https://github.com/serensic-ltd">serensic-ltd</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
