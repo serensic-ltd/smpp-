@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Smpp- by serensic-ltd</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Smpp-</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/serensic-ltd/smpp-" class="btn">View on GitHub</a>
-      <a href="https://github.com/serensic-ltd/smpp-/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/serensic-ltd/smpp-/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <section class="main-content">
-      <h1>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Smpp- by serensic-ltd</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Smpp-</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/serensic-ltd/smpp-/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/serensic-ltd/smpp-/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/serensic-ltd/smpp-" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
 <a id="listed-in-the-below-table-are-webservices-parameters-for-individual-tasks" class="anchor" href="#listed-in-the-below-table-are-webservices-parameters-for-individual-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Listed in the below table are webservices parameters for individual tasks.</h1>
 
 <p>Name    Description
@@ -29,9 +38,12 @@ p   password, supplied for op=get_token
 op  operation or type of action
 format  output format selection
 from    SMS sender ID (for op=pv)
-to  destination numbers, @username or #groupcode, may use commas
-footer  SMS footer (for op=pv)
-nofooter    remove SMS footer
+to  destination numbers, @username or #groupcode, may use commas</p>
+
+<h2>
+<a id="footer----sms-footer-for-oppv" class="anchor" href="#footer----sms-footer-for-oppv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>footer    SMS footer (for op=pv)</h2>
+
+<p>nofooter    remove SMS footer
 msg     message (+ or %20 for spaces, urlencode for non ascii chars)
 schedule    schedule message delivery, format: YYYY-MM-DD hh:mm:ss
 type    message type (flash or text)
@@ -46,8 +58,10 @@ c   number of delivery status that will be retrieved
 kwd     keyword
 login_key   login key sets by admin through webservices call op=loginkeyset</p>
 
-<p>Listed in the below table are webservices parameters for admin tasks.
-Name    Description
+<h2>
+<a id="listed-in-the-below-table-are-webservices-parameters-for-admin-tasks" class="anchor" href="#listed-in-the-below-table-are-webservices-parameters-for-admin-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Listed in the below table are webservices parameters for admin tasks.</h2>
+
+<p>Name    Description
 recvnum     receiver number (for op=inject)
 smsc    SMSC (for op=inject)
 data_*  admin tasks related supplied data</p>
@@ -55,9 +69,13 @@ data_*  admin tasks related supplied data</p>
 <p>Please note that all values should be URL encoded.
 Return Codes</p>
 
-<p>Below table listed return coded after unsuccessful call to a webservices operation. Successful operation will returns an OK data in the response message.</p>
+<h2>
+<a id="below-table-listed-return-coded-after-unsuccessful-call-to-a-webservices-operation-successful-operation-will-returns-an-ok-data-in-the-response-message" class="anchor" href="#below-table-listed-return-coded-after-unsuccessful-call-to-a-webservices-operation-successful-operation-will-returns-an-ok-data-in-the-response-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Below table listed return coded after unsuccessful call to a webservices operation. Successful operation will returns an OK data in the response message.</h2>
 
-<p>Please note that by default the response message is a JSON encoded message.
+<h2>
+<a id="please-note-that-by-default-the-response-message-is-a-json-encoded-message" class="anchor" href="#please-note-that-by-default-the-response-message-is-a-json-encoded-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Please note that by default the response message is a JSON encoded message.</h2>
+
+<p>Notes:
 Error code  Description
 ERR 100     authentication failed
 ERR 101     type of action is invalid or unknown
@@ -100,8 +118,10 @@ ERR 624     fail to deduct credit
 ERR 625     setting login key failed due to missing data
 ERR 626     fail to set login key</p>
 
-<p>There might appear new error codes in the future, you should be aware that new codes might appear in this syntax:
-Error code  Description
+<h2>
+<a id="there-might-appear-new-error-codes-in-the-future-you-should-be-aware-that-new-codes-might-appear-in-this-syntax" class="anchor" href="#there-might-appear-new-error-codes-in-the-future-you-should-be-aware-that-new-codes-might-appear-in-this-syntax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>There might appear new error codes in the future, you should be aware that new codes might appear in this syntax:</h2>
+
+<p>Error code  Description
 ERR 1xx     authentication or parameter erorrs
 ERR 2xx     specific pv errors
 ERR 4xx     delivery status errors
@@ -110,14 +130,16 @@ ERR 6xx     administrative tasks
 Protocol for non-admin tasks
 Send message</p>
 
-<p>Send message to a single or multiple mobile numbers, @username or #groupcode
-Parameters  Name or description
+<h2>
+<a id="send-message-to-a-single-or-multiple-mobile-numbers-username-or-groupcode" class="anchor" href="#send-message-to-a-single-or-multiple-mobile-numbers-username-or-groupcode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send message to a single or multiple mobile numbers, @username or #groupcode</h2>
+
+<p>Parameters  Name or description
 Operation   pv
 Mandatory   u h to msg
 Optional    type unicode from footer nofooter format
-Returns     return codes</p>
-
-<p>Parameter to can be international formatted mobile number, #groupcode or @username, or a mix of them. Separate by commas for multiple value.
+Returns     return codes
+Notes:
+Parameter to can be international formatted mobile number, #groupcode or @username, or a mix of them. Separate by commas for multiple value.
 Outgoing SMS and delivery status</p>
 
 <p>List outgoing SMS and delivery status.
@@ -418,15 +440,9 @@ List of contacts on phonebook</p>
 <p>{"status":"OK","error":"0","data":[{"pid":"13674","gpid":"2","p_desc":"Mark Francis","p_num":"255000000","email":"","group_name":"Test Group","code":"TESTGROUP"}],"multi":true}</p>
 
 <p>When error occurred serensic will returns one of the return code, also in JSON format.</p>
+      </section>
+    </div>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/serensic-ltd/smpp-">Smpp-</a> is maintained by <a href="https://github.com/serensic-ltd">serensic-ltd</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+    
   </body>
 </html>
