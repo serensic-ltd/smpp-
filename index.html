@@ -41,9 +41,12 @@ from    SMS sender ID (for op=pv)
 to  destination numbers, @username or #groupcode, may use commas</p>
 
 <h2>
-<a id="footer----sms-footer-for-oppv" class="anchor" href="#footer----sms-footer-for-oppv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>footer    SMS footer (for op=pv)</h2>
+<a id="footer----1" class="anchor" href="#footer----1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>footer    1.</h2>
 
-<p>nofooter    remove SMS footer
+<hr>
+
+<p>SMS footer (for op=pv)
+nofooter    remove SMS footer
 msg     message (+ or %20 for spaces, urlencode for non ascii chars)
 schedule    schedule message delivery, format: YYYY-MM-DD hh:mm:ss
 type    message type (flash or text)
@@ -58,6 +61,8 @@ c   number of delivery status that will be retrieved
 kwd     keyword
 login_key   login key sets by admin through webservices call op=loginkeyset</p>
 
+<hr>
+
 <h2>
 <a id="listed-in-the-below-table-are-webservices-parameters-for-admin-tasks" class="anchor" href="#listed-in-the-below-table-are-webservices-parameters-for-admin-tasks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Listed in the below table are webservices parameters for admin tasks.</h2>
 
@@ -68,6 +73,8 @@ data_*  admin tasks related supplied data</p>
 
 <p>Please note that all values should be URL encoded.
 Return Codes</p>
+
+<hr>
 
 <h2>
 <a id="below-table-listed-return-coded-after-unsuccessful-call-to-a-webservices-operation-successful-operation-will-returns-an-ok-data-in-the-response-message" class="anchor" href="#below-table-listed-return-coded-after-unsuccessful-call-to-a-webservices-operation-successful-operation-will-returns-an-ok-data-in-the-response-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Below table listed return coded after unsuccessful call to a webservices operation. Successful operation will returns an OK data in the response message.</h2>
@@ -130,6 +137,8 @@ ERR 6xx     administrative tasks
 Protocol for non-admin tasks
 Send message</p>
 
+<hr>
+
 <h2>
 <a id="send-message-to-a-single-or-multiple-mobile-numbers-username-or-groupcode" class="anchor" href="#send-message-to-a-single-or-multiple-mobile-numbers-username-or-groupcode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Send message to a single or multiple mobile numbers, @username or #groupcode</h2>
 
@@ -152,8 +161,12 @@ Returns     data or return codes</p>
 <p>Parameter c will retrieve as many as c value, last will retrieves data from last SMS log ID.
 Incoming SMS</p>
 
-<p>List incoming SMS.
-Parameters  Name or description
+<hr>
+
+<h2>
+<a id="list-incoming-sms" class="anchor" href="#list-incoming-sms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List incoming SMS.</h2>
+
+<p>Parameters  Name or description
 Operation   in
 Mandatory   u h
 Optional    queue src dst dt smslog_id c last format
@@ -162,8 +175,12 @@ Returns     data or return codes</p>
 <p>Parameter c will retrieve as many as c value, last will retrieves data from last SMS log ID.
 Inbox</p>
 
-<p>List SMS on user's inbox.
-Parameters  Name or description
+<hr>
+
+<h2>
+<a id="list-sms-on-users-inbox" class="anchor" href="#list-sms-on-users-inbox" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List SMS on user's inbox.</h2>
+
+<p>Parameters  Name or description
 Operation   ix
 Mandatory   u h
 Optional    queue src dst dt smslog_id c last format
@@ -450,6 +467,8 @@ List of contacts on phonebook</p>
 <p>{"status":"OK","error":"0","data":[{"pid":"13674","gpid":"2","p_desc":"Mark Francis","p_num":"255000000","email":"","group_name":"Test Group","code":"TESTGROUP"}],"multi":true}</p>
 
 <p>When error occurred serensic will returns one of the return code, also in JSON format.</p>
+
+<hr>
       </section>
     </div>
 
