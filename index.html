@@ -350,25 +350,31 @@ data_local_length used to detect local destination number by its length
 data_replace_zero is a numeric only prefix number to replace prefix 0
 </code></pre>
 
-<p>View account credit</p>
+<h2>
+<a id="view-account-credit" class="anchor" href="#view-account-credit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>View account credit</h2>
 
-<p>View an account credit or balance
+<p>Notes:
+View an account credit or balance
 Parameters  Name or description
 Operation   creditview
 Mandatory   u h data_username
 Optional    format
 Returns     return codes and balance
-Add account credit</p>
+Add account credit
+Notes:</p>
 
-<p>Add credit to an account
-Parameters  Name or description
+<h2>
+<a id="add-credit-to-an-account" class="anchor" href="#add-credit-to-an-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add credit to an account</h2>
+
+<p>Parameters  Name or description
 Operation   creditadd
 Mandatory   u h data_username data_amount
 Optional    format
 Returns     return codes, updated balance and amount
 Deduct account credit</p>
 
-<p>Deduct credit to an account
+<p>Notes:
+<em>Deduct credit to an account</em>
 Parameters  Name or description
 Operation   creditdeduct
 Mandatory   u h data_username data_amount
@@ -376,8 +382,12 @@ Optional    format
 Returns     return codes, updated balance and amount
 Set login key</p>
 
-<p>Set login key for an account
-Parameters  Name or description
+<p>Notes:</p>
+
+<h2>
+<a id="set-login-key-for-an-account" class="anchor" href="#set-login-key-for-an-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set login key for an account</h2>
+
+<p>Parameters  Name or description
 Operation   loginkeyset
 Mandatory   u h data_username
 Optional    format
@@ -387,11 +397,11 @@ Send SMS</p>
 
 <p>Example webservice URL:</p>
 
-<p>http://ip/index.php?app=ws&amp;u=mark&amp;h=a45a02791b2fe2fedb078c39fd83637a&amp;op=pv&amp;to=0987654321&amp;msg=test+only</p>
+<p><a href="http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=a45a02791b2fe2fedb078c39fd83637a&amp;op=pv&amp;to=0987654321&amp;msg=test">http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=a45a02791b2fe2fedb078c39fd83637a&amp;op=pv&amp;to=0987654321&amp;msg=test</a></p>
 
 <p>Explanation:</p>
 
-<p>webservices in x.dom with operation op pv (send SMS) was accessed by a user using username u and webservices token h with destination number to 255000000, message msg 'test only' and expected output format is the default format, JSON format.</p>
+<p>Webservices in dev.serensic.com/app/ with operation op pv (send SMS) was accessed by a user using username u and webservices token h with destination number to 255000000, message msg 'test only' and expected output format is the default format, JSON format.</p>
 
 <p>When succeeded  will returns OK status message in JSON format:</p>
 
@@ -402,7 +412,7 @@ List of incoming SMS</p>
 
 <p>Example webservice URL:</p>
 
-<p><a href="http://x.com/index.php?app=ws&amp;u=anton&amp;h=482ac0069592c647289e52dfef88be68&amp;op=in&amp;kwd=IDOL&amp;format=xml">http://x.com/index.php?app=ws&amp;u=anton&amp;h=482ac0069592c647289e52dfef88be68&amp;op=in&amp;kwd=IDOL&amp;format=xml</a></p>
+<p><a href="http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=482ac0069592c647289e52dfef88be68&amp;op=in&amp;kwd=IDOL&amp;format=xml">http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=482ac0069592c647289e52dfef88be68&amp;op=in&amp;kwd=IDOL&amp;format=xml</a></p>
 
 <p>Explanation:</p>
 
@@ -429,7 +439,7 @@ List of contacts on phonebook</p>
 
 <p>Example webservice URL:</p>
 
-<p>http://ip/index.php?app=ws&amp;u=mark&amp;h=482ac0069592c647289e52dfef88be68&amp;op=get_contact&amp;kwd=mark</p>
+<p><a href="http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=482ac0069592c647289e52dfef88be68&amp;op=get_contact&amp;kwd=mark">http://dev.serensic.com/app/index.php?app=ws&amp;u=mark&amp;h=482ac0069592c647289e52dfef88be68&amp;op=get_contact&amp;kwd=mark</a></p>
 
 <p>Explanation:</p>
 
